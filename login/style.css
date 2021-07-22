@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Noto+Sans&display=swap');
+html {
+    width: 100%;
+    height: 100%;
+    background: url("assets/background-login.jpg");
+}
+
+body {
+    height: 650px;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 97vh;
+}
+
+input:-webkit-autofill {
+    box-shadow: 0 0 0 30px rgb(0, 0, 0) inset;
+}
+
+
+/* Cor do texto do autocomplete */
+
+input:-webkit-autofill {
+    -webkit-text-fill-color: blue;
+}
+
+a {
+    text-decoration: none;
+}
+
+.conteiner {
+    height: 600px;
+    display: flex;
+    width: 450px;
+}
+
+.form-login {
+    box-sizing: border-box;
+    width: 480px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    background: #151515;
+    border-radius: 3.72627px;
+    padding: 40px;
+}
+
+.form-login h1 {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 35.7722px;
+    line-height: 44px;
+    align-items: center;
+    text-align: center;
+    color: #607B7D;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    padding: 5px 0;
+    width: 100%;
+}
+
+.form-group label {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 22.3576px;
+    line-height: 27px;
+    display: flex;
+    align-items: flex-end;
+    color: rgba(255, 255, 255, 0.85);
+}
+
+.form-group input {
+    width: 100%;
+    height: 45px;
+    background: #050402;
+    border-radius: 5px;
+    border-style: none;
+    -webkit-text-fill-color: rgb(255, 255, 255);
+}
+
+.esqueci-senha a {
+    align-items: center;
+    margin-top: 5px;
+    font-family: 'Noto Sans', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 17.1408px;
+    line-height: 23px;
+    color: #6C6666;
+    transition: all 1s;
+}
+
+.esqueci-senha a:hover {
+    color: rgba(255, 255, 255, 0.85);
+}
+
+.enviar {
+    display: flex;
+}
+
+.enviar button {
+    margin: auto auto;
+    margin-top: 15px;
+    width: 100%;
+    height: 38px;
+    border-style: none;
+    border-radius: 5px;
+    background: #0D2031;
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: normal;
+    font-size: 20px;
+    color: #FFFF;
+    transition: all 1s;
+}
+
+.enviar input:hover {
+    background-color: #424c55
+}
+
+.form-login footer {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.form-login footer span {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20.8671px;
+    line-height: 25px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #f4f4f4;
+}
+
+.form-login footer a {
+    margin-top: 20px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 26.8291px;
+    line-height: 33px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #B6FAFF;
+    transition: all 1s;
+}
+
+.form-login footer a:hover {
+    transform: scale(1.05);
+}
+
+@media (max-width: 600px) {
+    .container {
+        width: 90vw;
+        height: 90vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .form-login {
+        padding: 15px;
+    }
+    .form-group label {
+        font-size: 20px;
+    }
+    .esqueci-senha a {
+        display: block;
+        padding: 10px;
+        margin: 0 0 0 -10px;
+    }
+    .enviar button {
+        height: 60px;
+    }
+    .form-login footer {
+        margin-top: 20px;
+        padding: 0;
+    }
+    .form-login footer span {
+        font-size: 15px;
+    }
+    .form-login footer a {
+        font-size: 20px;
+        margin-top: 0px;
+        padding: 10px;
+    }
+}
